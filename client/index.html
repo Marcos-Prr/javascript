@@ -61,12 +61,16 @@
     <script src="app/domain/negociocacao/Negociocacao.js"></script>
     <script>
         let n1 = new Negociacao(new Date(),5,700);
-
-        n1.quantidade =5000;
+        let OutroDia = new Date();
+        OutroDia.setDate(11);
+        
+        
        
         console.log(n1.getQuantidade());
        
         console.log(n1.getValor());
+        console.log(n1.getData());
+        n1.data =OutroDia;
         console.log(n1.getData());
 
         console.log(n1.getVolume());
